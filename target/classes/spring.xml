@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+	<bean id="triangle" class="org.rakesh.sahu.elm.Triangle">
+		<property name="type" value="Equilateral"/>
+	</bean>
+	
+	<bean id="circle" class="org.rakesh.sahu.elm.Circle">
+		<constructor-arg index="0" value="2"></constructor-arg>
+		<constructor-arg index="1" value="4"></constructor-arg>
+	</bean>
+</beans>

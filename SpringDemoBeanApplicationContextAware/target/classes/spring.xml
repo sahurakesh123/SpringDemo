@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+		<bean id="triangle" class="org.rakesh.sahu.elm.Triangle" autowire="constructor">
+			<!-- <property name="point"> No need to declare property
+				<list>
+				 <ref bean="zeroPoint"/>
+				 <ref bean="point2"/>
+				 <ref bean="point3"/>
+				</list>
+		</property> -->
+		</bean>	
+		<bean id="pointC" class="org.rakesh.sahu.elm.Point">
+			<property name="x" value="-20"/>
+			<property name="y" value="0"/>
+		</bean>
+		<bean id="pointB" class="org.rakesh.sahu.elm.Point">
+			<property name="x" value="20"/>
+			<property name="y" value="0"/>
+		</bean>
+		<bean id="pointA" class="org.rakesh.sahu.elm.Point">
+			<property name="x" value="0"/>
+			<property name="y" value="0"/>
+		</bean>
+</beans>
